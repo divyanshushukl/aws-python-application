@@ -4,6 +4,9 @@ import os
 # Specify the ARN of the role you want to assume, please delete once the testing is complete.
 role_arn = 'arn:aws:iam::990096392123:policy/sample'
 
+#Backup in S3 Bucket: assume-role-secret-bucket
+#File: flag.txt
+
 # Create a new STS client and assume the role
 sts_client = boto3.client('sts')
 assumed_role = sts_client.assume_role(RoleArn=role_arn, RoleSessionName='my-session')
