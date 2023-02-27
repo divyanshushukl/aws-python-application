@@ -2,7 +2,7 @@ import boto3
 import os
 
 # Specify the ARN of the role you want to assume, please delete once the testing is complete.
-role_arn = 'arn:aws:iam::880096392120:policy/devops-assume-role'
+role_arn = 'arn:aws:iam::990096392123:policy/sample'
 
 # Create a new STS client and assume the role
 sts_client = boto3.client('sts')
